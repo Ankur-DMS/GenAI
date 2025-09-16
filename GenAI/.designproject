@@ -1,0 +1,10 @@
+{
+  "description" : "",
+  "groupId" : "ankurmore_bluepolaris.com.evernorth_genai.genai",
+  "locale" : "en_US",
+  "properties" : {
+    "refactoringEnabled" : false,
+    "tags" : [ ]
+  },
+  "extraProperties" : { }
+}

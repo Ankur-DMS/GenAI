@@ -1,0 +1,66 @@
+
+# ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway#concept.label = carePathway
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.CarePathway(java.lang.String,java.lang.String,java.time.ZonedDateTime,java.lang.String,java.lang.String,java.lang.String,java.util.List,java.lang.String,java.time.ZonedDateTime)#phrase.navigation = a new {carePathway} where {0, carepathwayId} {1, categoryCode} {2, creationDate} {3, sourceCode} {4, status} {5, statusReason} {6, subject} {7, type} {8, updateDate}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.addTo_subjects(ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject)#phrase.action = add {0} to the subjects of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.carepathwayId#phrase.action = set the carepathwayId of {this} to {carepathwayId}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.carepathwayId#phrase.navigation = {carepathwayId} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.categoryCode#phrase.action = set the categoryCode of {this} to {categoryCode}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.categoryCode#phrase.navigation = {categoryCode} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.clear_subjects()#phrase.action = clear the subjects of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.creationDate#phrase.action = set the creationDate of {this} to {creationDate}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.creationDate#phrase.navigation = {creationDate} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.removeFrom_subjects(ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject)#phrase.action = remove {0} from the subjects of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.sourceCode#phrase.action = set the sourceCode of {this} to {sourceCode}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.sourceCode#phrase.navigation = {sourceCode} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.status#phrase.action = set the status of {this} to {status}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.status#phrase.navigation = {status} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.statusReason#phrase.action = set the statusReason of {this} to {statusReason}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.statusReason#phrase.navigation = {statusReason} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.subjects#phrase.action = set the subjects of {this} to {subject}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.subjects#phrase.navigation = {subject} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.type#phrase.action = set the type of {this} to {type}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.type#phrase.navigation = {type} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.updateDate#phrase.action = set the updateDate of {this} to {updateDate}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.updateDate#phrase.navigation = {updateDate} of {this}
+
+# ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response#concept.label = Response
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response.Response(java.lang.String,boolean,java.lang.String)#phrase.navigation = a new {Response} where {0, ClientID} {1, isValidClient} {2, Message}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response.clientID#phrase.action = set the ClientID of {this} to {ClientID}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response.clientID#phrase.navigation = {ClientID} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response.isValidClient#phrase.action[0] = {this} gets isValidClient only if {isValidClient}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response.isValidClient#phrase.action[1] = make it {isValidClient} that {this} is isValidClient
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response.isValidClient#phrase.action[1].deprecated = true
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response.isValidClient#phrase.navigation = {this} is isValidClient
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response.isValidClient#phrase.negative_predicate = {this} is not isValidClient
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response.isValidClient#phrase.negative_predicate_setter = {this} does not get isValidClient
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response.isValidClient#phrase.positive_predicate_setter = {this} gets isValidClient
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response.message#phrase.action = set the Message of {this} to {Message}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response.message#phrase.navigation = {Message} of {this}
+
+# ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject#concept.label = subject
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.Subject(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)#phrase.navigation = a new {subject} where {0, ami} {1, cardExtension} {2, clientAccountNumber} {3, clientId} {4, eid} {5, eidType} {6, externalMemberId} {7, groupID} {8, ssoId} {9, tenantId} {10, type}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.ami#phrase.action = set the ami of {this} to {ami}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.ami#phrase.navigation = {ami} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.cardExtension#phrase.action = set the cardExtension of {this} to {cardExtension}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.cardExtension#phrase.navigation = {cardExtension} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.clientAccountNumber#phrase.action = set the clientAccountNumber of {this} to {clientAccountNumber}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.clientAccountNumber#phrase.navigation = {clientAccountNumber} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.clientId#phrase.action = set the clientId of {this} to {clientId}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.clientId#phrase.navigation = {clientId} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.eid#phrase.action = set the eid of {this} to {eid}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.eid#phrase.navigation = {eid} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.eidType#phrase.action = set the eidType of {this} to {eidType}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.eidType#phrase.navigation = {eidType} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.externalMemberId#phrase.action = set the externalMemberId of {this} to {externalMemberId}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.externalMemberId#phrase.navigation = {externalMemberId} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.groupID#phrase.action = set the groupID of {this} to {groupID}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.groupID#phrase.navigation = {groupID} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.ssoId#phrase.action = set the ssoId of {this} to {ssoId}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.ssoId#phrase.navigation = {ssoId} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.tenantId#phrase.action = set the tenantId of {this} to {tenantId}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.tenantId#phrase.navigation = {tenantId} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.type#phrase.action = set the type of {this} to {type}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject.type#phrase.navigation = {type} of {this}

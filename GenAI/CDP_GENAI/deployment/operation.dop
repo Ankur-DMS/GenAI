@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="CDP_GENAI">
+  <name>CDP_GENAI</name>
+  <uuid>334ea3e6-23cd-4372-bb8c-41deba09d22e</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#06fc1200-19ad-4ff5-ba86-8c2532d9c0e5"/>
+  <targetRuleProject href="../../CDP_GENAI#db9a9419-69e0-47f7-bffd-0f79446319ca"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>
