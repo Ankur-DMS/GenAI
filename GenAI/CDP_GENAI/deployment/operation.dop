@@ -4,4 +4,13 @@
   <uuid>334ea3e6-23cd-4372-bb8c-41deba09d22e</uuid>
   <decisionModel href="../rules/decisionModel.dmo#06fc1200-19ad-4ff5-ba86-8c2532d9c0e5"/>
   <targetRuleProject href="../../CDP_GENAI#db9a9419-69e0-47f7-bffd-0f79446319ca"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["CDP_GENAI"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
 </com.ibm.rules.studio.model.decisionservice:Operation>
