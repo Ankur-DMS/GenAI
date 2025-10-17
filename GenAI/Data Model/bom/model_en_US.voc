@@ -1,4 +1,24 @@
 
+# ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions#concept.label = actions
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions.Actions(java.lang.String,java.time.ZonedDateTime,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.time.ZonedDateTime)#phrase.navigation = a new {actions} where {0, actionId} {1, creationDate} {2, definitionId} {3, display} {4, priority} {5, status} {6, statusReason} {7, updateDate}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions.actionId#phrase.action = set the actionId of {this} to {actionId}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions.actionId#phrase.navigation = {actionId} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions.creationDate#phrase.action = set the creationDate of {this} to {creationDate}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions.creationDate#phrase.navigation = {creationDate} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions.definitionId#phrase.action = set the definitionId of {this} to {definitionId}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions.definitionId#phrase.navigation = {definitionId} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions.display#phrase.action = set the display of {this} to {display}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions.display#phrase.navigation = {display} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions.priority#phrase.action = set the priority of {this} to {priority}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions.priority#phrase.navigation = {priority} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions.status#phrase.action = set the status of {this} to {status}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions.status#phrase.navigation = {status} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions.statusReason#phrase.action = set the statusReason of {this} to {statusReason}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions.statusReason#phrase.navigation = {statusReason} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions.updateDate#phrase.action = set the updateDate of {this} to {updateDate}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions.updateDate#phrase.navigation = {updateDate} of {this}
+
 # ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway
 ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway#concept.label = carePathway
 ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.CarePathway(java.lang.String,java.lang.String,java.time.ZonedDateTime,java.lang.String,java.lang.String,java.lang.String,java.util.List,java.lang.String,java.time.ZonedDateTime)#phrase.navigation = a new {carePathway} where {0, carepathwayId} {1, categoryCode} {2, creationDate} {3, sourceCode} {4, status} {5, statusReason} {6, subject} {7, type} {8, updateDate}
@@ -23,6 +43,56 @@ ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.type#phras
 ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.type#phrase.navigation = {type} of {this}
 ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.updateDate#phrase.action = set the updateDate of {this} to {updateDate}
 ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.updateDate#phrase.navigation = {updateDate} of {this}
+
+# ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals#concept.label = goals
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.Goals(java.util.List,java.lang.String,java.time.ZonedDateTime,java.lang.String,java.lang.String,java.lang.String,double,java.lang.String,java.lang.String,java.lang.String)#phrase.navigation = a new {goals} where {0, actions} {1, categoryCode} {2, creationDate} {3, definitionId} {4, display} {5, goalId} {6, priority} {7, status} {8, statusReason} {9, updateDate}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.actions#phrase.action = set the actionses of {this} to {actions}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.actions#phrase.navigation = {actions} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.addTo_actions(ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions)#phrase.action = add {0} to the actionses of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.categoryCode#phrase.action = set the categoryCode of {this} to {categoryCode}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.categoryCode#phrase.navigation = {categoryCode} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.clear_actions()#phrase.action = clear the actionses of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.creationDate#phrase.action = set the creationDate of {this} to {creationDate}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.creationDate#phrase.navigation = {creationDate} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.definitionId#phrase.action = set the definitionId of {this} to {definitionId}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.definitionId#phrase.navigation = {definitionId} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.display#phrase.action = set the display of {this} to {display}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.display#phrase.navigation = {display} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.goalId#phrase.action = set the goalId of {this} to {goalId}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.goalId#phrase.navigation = {goalId} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.priority#phrase.action = set the priority of {this} to {priority}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.priority#phrase.addition_setter = add {priority} to the priority of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.priority#phrase.navigation = {priority} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.priority#phrase.subtraction_setter = subtract {priority} from the priority of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.removeFrom_actions(ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions)#phrase.action = remove {0} from the actionses of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.status#phrase.action = set the status of {this} to {status}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.status#phrase.navigation = {status} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.statusReason#phrase.action = set the statusReason of {this} to {statusReason}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.statusReason#phrase.navigation = {statusReason} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.updateDate#phrase.action = set the updateDate of {this} to {updateDate}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals.updateDate#phrase.navigation = {updateDate} of {this}
+
+# ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Metadata
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Metadata#concept.label = metadata
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Metadata.Metadata(ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Outcome,java.lang.String)#phrase.navigation = a new {metadata} where {0, outcome} {1, serviceReferenceId}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Metadata.outcome#phrase.action = set the outcome of {this} to {outcome}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Metadata.outcome#phrase.clearer = clear the outcome of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Metadata.outcome#phrase.navigation = {outcome} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Metadata.serviceReferenceId#phrase.action = set the serviceReferenceId of {this} to {serviceReferenceId}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Metadata.serviceReferenceId#phrase.navigation = {serviceReferenceId} of {this}
+
+# ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Outcome
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Outcome#concept.label = outcome
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Outcome.Outcome(java.lang.String,java.lang.String,double)#phrase.navigation = a new {outcome} where {0, code} {1, message} {2, status}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Outcome.code#phrase.action = set the code of {this} to {code}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Outcome.code#phrase.navigation = {code} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Outcome.message#phrase.action = set the message of {this} to {message}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Outcome.message#phrase.navigation = {message} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Outcome.status#phrase.action = set the status of {this} to {status}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Outcome.status#phrase.addition_setter = add {status} to the status of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Outcome.status#phrase.navigation = {status} of {this}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Outcome.status#phrase.subtraction_setter = subtract {status} from the status of {this}
 
 # ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response
 ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response#concept.label = Response

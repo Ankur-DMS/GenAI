@@ -2,6 +2,52 @@
 package ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel;
 
 
+class Actions
+        property ads.typeId "7"
+        property com.fasterxml.jackson.annotation.JsonTypeName "actions"
+        #de.generated
+{
+    string actionId
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "actionId"
+                #update;
+    java.time.ZonedDateTime creationDate
+                property ads.attributeId "7"
+                property com.fasterxml.jackson.annotation.JsonProperty "creationDate"
+                #update;
+    string definitionId
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "definitionId"
+                #update;
+    string display
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "display"
+                #update;
+    string priority
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "priority"
+                #update;
+    string status
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "status"
+                #update;
+    string statusReason
+                property ads.attributeId "6"
+                property com.fasterxml.jackson.annotation.JsonProperty "statusReason"
+                #update;
+    java.time.ZonedDateTime updateDate
+                property ads.attributeId "8"
+                property com.fasterxml.jackson.annotation.JsonProperty "updateDate"
+                #update;
+    Actions(string actionId, java.time.ZonedDateTime creationDate, string definitionId, string display, string priority, string status, string statusReason, java.time.ZonedDateTime updateDate)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Actions()
+                #dataio.default;
+}
+
 class CarePathway
         property ads.typeId "1"
         property com.fasterxml.jackson.annotation.JsonTypeName "carePathway"
@@ -70,6 +116,129 @@ class CarePathway
     void set_subjects(java.util.Collection subjects domain 0,* class ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject)
                 property collectionAttribute "subjects"
                 #update;
+}
+
+class Goals
+        property ads.typeId "6"
+        property com.fasterxml.jackson.annotation.JsonTypeName "goals"
+        #de.generated
+{
+    java.util.List actions domain 0,* class ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions
+                property ads.attributeId "10"
+                property com.fasterxml.jackson.annotation.JsonProperty "actions"
+                #update;
+    string categoryCode
+                property ads.attributeId "7"
+                property com.fasterxml.jackson.annotation.JsonProperty "categoryCode"
+                #update;
+    java.time.ZonedDateTime creationDate
+                property ads.attributeId "8"
+                property com.fasterxml.jackson.annotation.JsonProperty "creationDate"
+                #update;
+    string definitionId
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "definitionId"
+                #update;
+    string display
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "display"
+                #update;
+    string goalId
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "goalId"
+                #update;
+    double priority
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "priority"
+                #update;
+    string status
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "status"
+                #update;
+    string statusReason
+                property ads.attributeId "6"
+                property com.fasterxml.jackson.annotation.JsonProperty "statusReason"
+                #update;
+    string updateDate
+                property ads.attributeId "9"
+                property com.fasterxml.jackson.annotation.JsonProperty "updateDate"
+                #update;
+    Goals(java.util.List actions domain 0,* class ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions, 
+        string categoryCode, 
+        java.time.ZonedDateTime creationDate, 
+        string definitionId, 
+        string display, 
+        string goalId, 
+        double priority, 
+        string status, 
+        string statusReason, 
+        string updateDate)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Goals()
+                #dataio.default;
+    void addTo_actions(ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions actions)
+                property collectionAttribute "actions"
+                #update;
+    void clear_actions()
+                property collectionAttribute "actions"
+                #update;
+    void removeFrom_actions(ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions actions)
+                property collectionAttribute "actions"
+                #update;
+    void set_actions(java.util.Collection actions domain 0,* class ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions)
+                property collectionAttribute "actions"
+                #update;
+}
+
+class Metadata
+        property ads.typeId "4"
+        property com.fasterxml.jackson.annotation.JsonTypeName "metadata"
+        #de.generated
+{
+    ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Outcome outcome
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "outcome"
+                #update;
+    string serviceReferenceId
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "serviceReferenceId"
+                #update;
+    Metadata(ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Outcome outcome, string serviceReferenceId)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Metadata()
+                #dataio.default;
+}
+
+class Outcome
+        property ads.typeId "5"
+        property com.fasterxml.jackson.annotation.JsonTypeName "outcome"
+        #de.generated
+{
+    string code
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "code"
+                #update;
+    string message
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "message"
+                #update;
+    double status
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "status"
+                #update;
+    Outcome(string code, string message, double status)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Outcome()
+                #dataio.default;
 }
 
 class Response

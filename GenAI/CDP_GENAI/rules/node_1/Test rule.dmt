@@ -66,8 +66,8 @@
     </Body>
     <Resources DefaultLocale="en_US">
         <ResourceSet Locale="en_US">
-            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Carepathway]]></Data>
             <Data Name="Definitions(A0)#HeaderText"><![CDATA[GenAI]]></Data>
+            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Carepathway]]></Data>
         </ResourceSet>
     </Resources>
 </DT>
