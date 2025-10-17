@@ -21,7 +21,7 @@ ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Actions.updateDate#phr
 
 # ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway
 ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway#concept.label = carePathway
-ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.CarePathway(java.lang.String,java.lang.String,java.time.ZonedDateTime,java.lang.String,java.lang.String,java.lang.String,ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject,java.lang.String,java.time.ZonedDateTime)#phrase.navigation = a new {carePathway} where {0, carepathwayId} {1, categoryCode} {2, creationDate} {3, sourceCode} {4, status} {5, statusReason} {6, subject} {7, type} {8, updateDate}
+ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.CarePathway(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject,java.lang.String,java.lang.String)#phrase.navigation = a new {carePathway} where {0, carepathwayId} {1, categoryCode} {2, creationDate} {3, sourceCode} {4, status} {5, statusReason} {6, subject} {7, type} {8, updateDate}
 ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.carepathwayId#phrase.action = set the carepathwayId of {this} to {carepathwayId}
 ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.carepathwayId#phrase.navigation = {carepathwayId} of {this}
 ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway.categoryCode#phrase.action = set the categoryCode of {this} to {categoryCode}
