@@ -11,17 +11,14 @@
         </Properties>
         <Preconditions>
             <Text><![CDATA[definitions 
- 
-	--set 'variable1' to a carePathway in Carepathway ; 
- 
-	set 'variable2' to  a subject in the subjects of Carepathway 
-	where the clientId of this subject is not one of { "41039658" , "05539" ,"123456"};]]></Text>
+	set 'variable2' to  a subject in the subjects of 'Carepathway' 
+	where the clientId of this subject is not one of { "439658" , "05539" , "123456" } ;]]></Text>
         </Preconditions>
         <Structure>
             <ConditionDefinitions>
                 <ConditionDefinition Id="C0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[the clientId of variable2 is not null is <a boolean>]]></Text>
+                        <Text><![CDATA[the clientId of 'variable2' is not null is <a boolean>]]></Text>
                     </ExpressionDefinition>
                 </ConditionDefinition>
             </ConditionDefinitions>
@@ -29,9 +26,9 @@
                 <ActionDefinition Id="A0">
                     <ExpressionDefinition>
                         <Text><![CDATA[add a new Response where
-	the ClientID is the clientId of variable2 , 
-  isValidClient is <isValidClient> , 
-	the Message is <Message> to decision]]></Text>
+	the ClientID is the clientId of 'variable2' , 
+	generateDescriptiveCarePathway is <generateDescriptiveCarePathway> , 
+	the Message is <Message> to 'decision']]></Text>
                     </ExpressionDefinition>
                 </ActionDefinition>
             </ActionDefinitions>
@@ -46,7 +43,7 @@
                         <Action DefId="A0">
                             <Expression>
                                 <Param><![CDATA[false]]></Param>
-                                <Param><![CDATA["The Client ID appears to be incorrect based on the CDP call, so we are unable to generate the descriptive report for this Client ID"]]></Param>
+                                <Param><![CDATA["We are unable to generate the descriptive report for this Client ID"]]></Param>
                             </Expression>
                         </Action>
                     </ActionSet>
@@ -59,7 +56,7 @@
                         <Action DefId="A0">
                             <Expression>
                                 <Param><![CDATA[false]]></Param>
-                                <Param><![CDATA["The Client ID appears to be Null, so we are unable to generate the descriptive report for this Client ID"]]></Param>
+                                <Param><![CDATA["We are unable to generate the descriptive report for this Client ID"]]></Param>
                             </Expression>
                         </Action>
                     </ActionSet>

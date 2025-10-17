@@ -15,17 +15,17 @@
         </extensionElements>
         <variable id="node_0_ii" name="Carepathway" typeRef="ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway[]"/>
     </inputData>
-    <decision id="node_1" name="GenAI">
+    <decision id="node_1" name="Generate Descriptive Carepathway Decision">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway" collection="true" name="Carepathway"/>
-                <output bomType="ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response" collection="true" name="GenAI"/>
-                <rule defaultRule="false" href="node_1/Business.dmt" kind="DecisionTable" name="Business"/>
+                <output bomType="ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response" collection="true" name="Generate Descriptive Carepathway Decision"/>
+                <rule defaultRule="false" href="node_1/CCW.dmt" kind="DecisionTable" name="CCW"/>
                 <rule defaultRule="false" href="node_1/Test%20rule.dmt" kind="DecisionTable" name="Test rule"/>
                 <rule defaultRule="true" href="node_1/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
             </ruleset>
         </extensionElements>
-        <variable id="node_1_ii" name="GenAI" typeRef="ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response[]"/>
+        <variable id="node_1_ii" name="Generate Descriptive Carepathway Decision" typeRef="ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response[]"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>
