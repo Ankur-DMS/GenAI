@@ -19,8 +19,6 @@
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway" collection="false" name="CarePathway"/>
-                <input bomType="ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Metadata" collection="false" name="metadata"/>
-                <input bomType="ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals" collection="true" name="goals"/>
                 <output bomType="ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response" collection="true" name="Generate Descriptive Carepathway Decision"/>
                 <rule defaultRule="false" href="node_1/CCW.dmt" kind="DecisionTable" name="CCW"/>
                 <rule defaultRule="false" href="node_1/Test%20rule.dmt" kind="DecisionTable" name="Test rule"/>
@@ -31,29 +29,7 @@
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>
-        <informationRequirement>
-            <requiredInput href="#node_2"/>
-        </informationRequirement>
-        <informationRequirement>
-            <requiredInput href="#node_3"/>
-        </informationRequirement>
     </decision>
-    <inputData id="node_2" name="metadata">
-        <extensionElements>
-            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Metadata" collection="false" name="metadata"/>
-            </initialization>
-        </extensionElements>
-        <variable id="node_2_ii" name="metadata" typeRef="ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Metadata"/>
-    </inputData>
-    <inputData id="node_3" name="goals">
-        <extensionElements>
-            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals" collection="true" name="goals"/>
-            </initialization>
-        </extensionElements>
-        <variable id="node_3_ii" name="goals" typeRef="ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Goals[]"/>
-    </inputData>
 </definitions>
 </definition>
 </com.ibm.rules.studio.model.decisionmodel:DecisionModel>

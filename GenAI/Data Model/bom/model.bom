@@ -77,9 +77,9 @@ class CarePathway
                 property ads.attributeId "8"
                 property com.fasterxml.jackson.annotation.JsonProperty "statusReason"
                 #update;
-    java.util.List subjects domain 0,* class ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject
+    ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject subject
                 property ads.attributeId "9"
-                property com.fasterxml.jackson.annotation.JsonProperty "subjects"
+                property com.fasterxml.jackson.annotation.JsonProperty "subject"
                 #update;
     string type
                 property ads.attributeId "2"
@@ -89,33 +89,13 @@ class CarePathway
                 property ads.attributeId "4"
                 property com.fasterxml.jackson.annotation.JsonProperty "updateDate"
                 #update;
-    CarePathway(string carepathwayId, 
-        string categoryCode, 
-        java.time.ZonedDateTime creationDate, 
-        string sourceCode, 
-        string status, 
-        string statusReason, 
-        java.util.List subjects domain 0,* class ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject, 
-        string type, 
-        java.time.ZonedDateTime updateDate)
+    CarePathway(string carepathwayId, string categoryCode, java.time.ZonedDateTime creationDate, string sourceCode, string status, string statusReason, ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject subject, string type, java.time.ZonedDateTime updateDate)
                 #autoExpand
                 #beanConstructor
                 property groups "BALA"
                 #prototype;
     CarePathway()
                 #dataio.default;
-    void addTo_subjects(ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject subjects)
-                property collectionAttribute "subjects"
-                #update;
-    void clear_subjects()
-                property collectionAttribute "subjects"
-                #update;
-    void removeFrom_subjects(ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject subjects)
-                property collectionAttribute "subjects"
-                #update;
-    void set_subjects(java.util.Collection subjects domain 0,* class ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Subject)
-                property collectionAttribute "subjects"
-                #update;
 }
 
 class Goals

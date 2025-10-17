@@ -11,7 +11,7 @@
         </Properties>
         <Preconditions>
             <Text><![CDATA[definitions 
-	set 'variable2' to  a subject in the subjects of CarePathway 
+	set 'variable2' to  the subject of CarePathway 
 	where the clientId of this subject is not one of { "439658" , "05539" , "123456" } ;]]></Text>
         </Preconditions>
         <Structure>
@@ -66,8 +66,8 @@
     </Body>
     <Resources DefaultLocale="en_US">
         <ResourceSet Locale="en_US">
-            <Data Name="Definitions(A0)#HeaderText"><![CDATA[GenAI]]></Data>
             <Data Name="Definitions(C0)#HeaderText"><![CDATA[Carepathway]]></Data>
+            <Data Name="Definitions(A0)#HeaderText"><![CDATA[GenAI]]></Data>
         </ResourceSet>
     </Resources>
 </DT>

@@ -11,7 +11,7 @@
         </Properties>
         <Preconditions>
             <Text><![CDATA[definitions 
-	set 'variable2' to  a subject in the subjects of CarePathway ;]]></Text>
+	set 'variable2' to   the subject of CarePathway ;]]></Text>
         </Preconditions>
         <Structure>
             <ConditionDefinitions>
@@ -107,12 +107,12 @@
     </Body>
     <Resources DefaultLocale="en_US">
         <ResourceSet Locale="en_US">
-            <Data Name="Definitions(A0)#HeaderText"><![CDATA[Generate Descriptive Carepathway Decision]]></Data>
-            <Data Name="Definitions(A0)#Width"><![CDATA[708]]></Data>
-            <Data Name="Definitions(A0)[1]#HeaderText"><![CDATA[GenerateDescriptiveCarePathway]]></Data>
             <Data Name="Definitions(C0)#HeaderText"><![CDATA[clientId]]></Data>
-            <Data Name="Definitions(C0)#Width"><![CDATA[306]]></Data>
+            <Data Name="Definitions(A0)#Width"><![CDATA[708]]></Data>
             <Data Name="Definitions(C2)#HeaderText"><![CDATA[tenantId]]></Data>
+            <Data Name="Definitions(A0)[1]#HeaderText"><![CDATA[GenerateDescriptiveCarePathway]]></Data>
+            <Data Name="Definitions(A0)#HeaderText"><![CDATA[Generate Descriptive Carepathway Decision]]></Data>
+            <Data Name="Definitions(C0)#Width"><![CDATA[306]]></Data>
         </ResourceSet>
     </Resources>
 </DT>
