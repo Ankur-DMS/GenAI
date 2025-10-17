@@ -11,7 +11,7 @@
         </Properties>
         <Preconditions>
             <Text><![CDATA[definitions 
-	set 'variable2' to  a subject in the subjects of 'Carepathway' 
+	set 'variable2' to  a subject in the subjects of CarePathway 
 	where the clientId of this subject is not one of { "439658" , "05539" , "123456" } ;]]></Text>
         </Preconditions>
         <Structure>
