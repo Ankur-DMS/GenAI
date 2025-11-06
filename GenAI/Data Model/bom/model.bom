@@ -50,7 +50,7 @@ class Actions
 
 class CarePathway
         property ads.typeId "1"
-        property com.fasterxml.jackson.annotation.JsonTypeName "carePathway"
+        property com.fasterxml.jackson.annotation.JsonTypeName "CarePathway"
         #de.generated
 {
     string carepathwayId
@@ -96,6 +96,36 @@ class CarePathway
                 #prototype;
     CarePathway()
                 #dataio.default;
+}
+
+class Carepathway
+        property ads.typeId "8"
+        property com.fasterxml.jackson.annotation.JsonTypeName "carepathway"
+        #de.generated
+{
+    java.util.List clientIDs domain 0,* class string
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "clientIDs"
+                #update;
+    Carepathway(java.util.List clientIDs domain 0,* class string)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Carepathway()
+                #dataio.default;
+    void addTo_clientIDs(string clientIDs)
+                property collectionAttribute "clientIDs"
+                #update;
+    void clear_clientIDs()
+                property collectionAttribute "clientIDs"
+                #update;
+    void removeFrom_clientIDs(string clientIDs)
+                property collectionAttribute "clientIDs"
+                #update;
+    void set_clientIDs(java.util.Collection clientIDs domain 0,* class string)
+                property collectionAttribute "clientIDs"
+                #update;
 }
 
 class Goals

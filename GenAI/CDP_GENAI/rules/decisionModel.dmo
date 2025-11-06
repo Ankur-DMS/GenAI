@@ -7,18 +7,18 @@
     <extensionElements>
         <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
     </extensionElements>
-    <inputData id="node_0" name="CarePathway">
+    <inputData id="node_0" name="carepathway">
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway" collection="false" name="CarePathway"/>
+                <output bomType="ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Carepathway" collection="false" name="carepathway"/>
             </initialization>
         </extensionElements>
-        <variable id="node_0_ii" name="CarePathway" typeRef="ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway"/>
+        <variable id="node_0_ii" name="carepathway" typeRef="ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Carepathway"/>
     </inputData>
     <decision id="node_1" name="Generate Descriptive Carepathway Decision">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.CarePathway" collection="false" name="CarePathway"/>
+                <input bomType="ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Carepathway" collection="false" name="carepathway"/>
                 <output bomType="ankurmore_bluepolaris.com.evernorth_genai.genai.datamodel.Response" collection="true" name="Generate Descriptive Carepathway Decision"/>
                 <rule defaultRule="false" href="node_1/CCW.dmt" kind="DecisionTable" name="CCW"/>
                 <rule defaultRule="false" href="node_1/Test%20rule.dmt" kind="DecisionTable" name="Test rule"/>

@@ -11,18 +11,13 @@
         </Properties>
         <Preconditions>
             <Text><![CDATA[definitions 
-	set 'variable2' to   the subject of CarePathway ;]]></Text>
+	set 'variable2' to a string in the clientIDses of carepathway ;]]></Text>
         </Preconditions>
         <Structure>
             <ConditionDefinitions>
                 <ConditionDefinition Id="C0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[the clientId of 'variable2' is <a string>]]></Text>
-                    </ExpressionDefinition>
-                </ConditionDefinition>
-                <ConditionDefinition Id="C2">
-                    <ExpressionDefinition>
-                        <Text><![CDATA[the tenantId of 'variable2' is <a string>]]></Text>
+                        <Text><![CDATA['variable2' is <a string>]]></Text>
                     </ExpressionDefinition>
                 </ConditionDefinition>
             </ConditionDefinitions>
@@ -43,64 +38,43 @@
                     <Expression>
                         <Param><![CDATA["439658"]]></Param>
                     </Expression>
-                    <Partition DefId="C2">
-                        <Condition>
+                    <ActionSet>
+                        <Action DefId="A0">
                             <Expression>
-                                <Param><![CDATA["472"]]></Param>
+                                <Param><![CDATA["439658"]]></Param>
+                                <Param><![CDATA[true]]></Param>
+                                <Param><![CDATA["Client Should Eligible for Descriptive Carepathway"]]></Param>
                             </Expression>
-                            <ActionSet>
-                                <Action DefId="A0">
-                                    <Expression>
-                                        <Param><![CDATA["439658"]]></Param>
-                                        <Param><![CDATA[true]]></Param>
-                                        <Param><![CDATA["Client Should Eligible for Descriptive Carepathway"]]></Param>
-                                    </Expression>
-                                </Action>
-                            </ActionSet>
-                        </Condition>
-                    </Partition>
+                        </Action>
+                    </ActionSet>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA["05539"]]></Param>
                     </Expression>
-                    <Partition DefId="C2">
-                        <Condition>
+                    <ActionSet>
+                        <Action DefId="A0">
                             <Expression>
-                                <Param><![CDATA["16777472"]]></Param>
+                                <Param><![CDATA["05539"]]></Param>
+                                <Param><![CDATA[true]]></Param>
+                                <Param><![CDATA["Client Should Eligible for Descriptive Carepathway"]]></Param>
                             </Expression>
-                            <ActionSet>
-                                <Action DefId="A0">
-                                    <Expression>
-                                        <Param><![CDATA["05539"]]></Param>
-                                        <Param><![CDATA[true]]></Param>
-                                        <Param><![CDATA["Client Should Eligible for Descriptive Carepathway"]]></Param>
-                                    </Expression>
-                                </Action>
-                            </ActionSet>
-                        </Condition>
-                    </Partition>
+                        </Action>
+                    </ActionSet>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA["123456"]]></Param>
                     </Expression>
-                    <Partition DefId="C2">
-                        <Condition>
+                    <ActionSet>
+                        <Action DefId="A0">
                             <Expression>
-                                <Param><![CDATA["472"]]></Param>
+                                <Param><![CDATA["123456"]]></Param>
+                                <Param><![CDATA[true]]></Param>
+                                <Param><![CDATA["Client Should Eligible for Descriptive Carepathway"]]></Param>
                             </Expression>
-                            <ActionSet>
-                                <Action DefId="A0">
-                                    <Expression>
-                                        <Param><![CDATA["123456"]]></Param>
-                                        <Param><![CDATA[true]]></Param>
-                                        <Param><![CDATA["Client Should Eligible for Descriptive Carepathway"]]></Param>
-                                    </Expression>
-                                </Action>
-                            </ActionSet>
-                        </Condition>
-                    </Partition>
+                        </Action>
+                    </ActionSet>
                 </Condition>
             </Partition>
         </Contents>
@@ -109,7 +83,6 @@
         <ResourceSet Locale="en_US">
             <Data Name="Definitions(C0)#HeaderText"><![CDATA[clientId]]></Data>
             <Data Name="Definitions(A0)#Width"><![CDATA[708]]></Data>
-            <Data Name="Definitions(C2)#HeaderText"><![CDATA[tenantId]]></Data>
             <Data Name="Definitions(A0)[1]#HeaderText"><![CDATA[GenerateDescriptiveCarePathway]]></Data>
             <Data Name="Definitions(A0)#HeaderText"><![CDATA[Generate Descriptive Carepathway Decision]]></Data>
             <Data Name="Definitions(C0)#Width"><![CDATA[306]]></Data>
