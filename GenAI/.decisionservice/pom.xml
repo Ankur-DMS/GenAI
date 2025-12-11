@@ -4,7 +4,7 @@
     <parent>
         <groupId>ankurmore_bluepolaris.com.evernorth_genai.genai</groupId>
         <artifactId>genAI</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>LATEST-SNAPSHOT</version>
     </parent>
 
     <artifactId>genAIDecisionService</artifactId>
@@ -74,6 +74,7 @@
             </build>
         </profile>
     </profiles>
+
 
 
 <build>

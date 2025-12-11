@@ -3,27 +3,27 @@
 
     <groupId>ankurmore_bluepolaris.com.evernorth_genai.genai</groupId>
     <artifactId>genAI</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>LATEST-SNAPSHOT</version>
     <name>GenAI</name>
 
     <packaging>pom</packaging>
 
     <properties>
-        <ads-mojo.version>14.2.0</ads-mojo.version>
+        <ads-mojo.version>16.0.3</ads-mojo.version>
         <buildTime>${maven.build.timestamp}</buildTime>
-        <decision-ml-predictor.version>1.0.5</decision-ml-predictor.version>
+        <decision-ml-predictor.version>2.0.4</decision-ml-predictor.version>
         <decisionServiceId>${project.groupId}:${project.artifactId}</decisionServiceId>
-        <engine-api.version>3.4.0</engine-api.version>
-        <engine-compact-runtime.version>3.4.0</engine-compact-runtime.version>
-        <jackson.version>2.18.0</jackson.version>
+        <engine-api.version>3.6.0</engine-api.version>
+        <engine-compact-runtime.version>3.6.0</engine-compact-runtime.version>
+        <jackson.version>2.19.0</jackson.version>
         <junit.jupiter.version>5.8.0</junit.jupiter.version>
         <maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
         <maven-dependency-plugin.version>3.6.1</maven-dependency-plugin.version>
         <maven-shade-plugin.version>3.5.2</maven-shade-plugin.version>
         <maven-surefire-plugin.version>3.2.5</maven-surefire-plugin.version>
         <maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ss'Z'</maven.build.timestamp.format>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
